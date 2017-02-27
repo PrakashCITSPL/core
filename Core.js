@@ -497,7 +497,7 @@ Core = {
         }
         for( var method in _class ) {
             var events;
-            var isGetter = Object.getOwnPropertyDescriptor(_class, method) && Object.getOwnPropertyDescriptor(_class, method).get;
+            var isGetter = _class instanceof Object && Object.getOwnPropertyDescriptor(_class, method) && Object.getOwnPropertyDescriptor(_class, method).get;
             // check if property is actually getter to prevent getters from calling (it can be js errors because of calling)
             if (!isGetter && _class[method] instanceof Function ) {
                 if( events = _class[method].toString().replace(/\n/g,"").match(/(Core\.)?(CatchEvent|CatchRequest)\(([^\)]+)\)/m) ) {
