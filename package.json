@@ -1,6 +1,6 @@
 {
   "name": "core-os",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "Awesome event oriented javascript framework",
   "main": "Core.js",
   "directories": {
@@ -11,7 +11,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/AwesomeCore/core-javascript.git"
+    "url": "git+https://github.com/extremeprog-com/core.git"
   },
   "keywords": [
     "core"
@@ -19,7 +19,7 @@
   "author": "Oleg Sergienko",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/AwesomeCore/core-javascript/issues"
+    "url": "https://github.com/extremeprog-com/core/issues"
   },
-  "homepage": "https://github.com/AwesomeCore/core-javascript#readme"
+  "homepage": "https://github.com/extremeprog-com/core#readme"
 }
