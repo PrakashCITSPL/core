@@ -39,7 +39,7 @@ To fire Event call `FireEvent` function with created Event.
   }
 ```
 
-####Catching
+#### Catching
 The main twist is that you can catch the fired Event at any spaces of your code.
 So this can cut your code several times.
 
