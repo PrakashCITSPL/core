@@ -1,6 +1,4 @@
-CoreJS
-======
-
+#CoreJS
 Awesome Event Oriented Javascript Framework
 
 This framework provide us with new principles of the design of the code. The main idea is that the hole project is a set of modules. Every module has it's own objects. Some objects may have Events and Requests.
