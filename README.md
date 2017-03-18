@@ -1,4 +1,4 @@
-#CoreJS
+# CoreJS
 Awesome Event Oriented Javascript Framework
 
 This framework provide us with new principles of the design of the code. The main idea is that the hole project is a set of modules. Every module has it's own objects. Some objects may have Events and Requests.
@@ -9,23 +9,23 @@ Request is a complex object, that means that something asks to perform its reque
 Other objects of the system can subscribe to Events and Requests. Subscription is a static process.
 During initialization Core parses project and subscribes objects on Events and Requests.
 
-#Installing
+# Installing
 
-#API
+# API
 
-##Events
-###Description
+## Events
+### Description
 There are three steps for using Events: initialization, firing, catching.
 You can pass some data with Event.
 
-###Example
-####Initialization
+### Example
+#### Initialization
 To initialize Event object call `Core.registerEventPoint` with Event name. Event name consists of Object name that has this Event and action name.
 ```javascript
   Core.registerEventPoint('Player_Started');
 ```
 
-####Firing
+#### Firing
 To fire Event call `FireEvent` function with created Event.
 ```javascript
   var Player = {
@@ -45,7 +45,7 @@ So this can cut your code several times.
 
 Also you can dinamically subscribe to the event. It is useful in different cases, for example, in angular directives.
 
-#####Single Event Catching
+##### Single Event Catching
 ```javascript
 var GoogleTrackingObject = {
   sendPlayerEvent: function() {
@@ -58,7 +58,7 @@ var GoogleTrackingObject = {
 }
 ```
 
-#####Multiple Event Catching
+##### Multiple Event Catching
 ```javascript
 var GoogleTrackingObject = {
   sendPlayerEvents: function() {
@@ -69,19 +69,19 @@ var GoogleTrackingObject = {
 }
 ```
 
-##Requests
-###Description
+## Requests
+### Description
 There are three steps for using them: initialization, firing, catching.
 You can pass some data with the Request.
 
-###Example
-####Initialization
+### Example
+#### Initialization
 Just create Request object.
 ```javascript
   Core.registerRequestPoint('PlayerUI_StartRequest')
 ```
 
-####Firing
+#### Firing
 Fire it and ask something to perform your request.
 ```javascript
   var PlayerUi = {
@@ -96,7 +96,7 @@ Fire it and ask something to perform your request.
   }
 ```
 
-####Catching
+#### Catching
 Catch the Request and perform it.
 ```javascript
 var PlayerAudio = {
@@ -145,20 +145,20 @@ var Player = {
 }
 ```
 
-##States
+## States
 
-###Description
-####Usage
+### Description
+#### Usage
 ```javascript
  Core.state(state1, state2, ...)
 ```
 
-####Params
+#### Params
 ```javascript
   (String) '' // name of the state
 ```
 
-####Returns
+#### Returns
 ```javascript
  (Object) {
     value: (String)    // current state value
@@ -166,8 +166,8 @@ var Player = {
  }
 ```
 
-###Examples
-####Initialization
+### Examples
+#### Initialization
 ```javascript
  var Object = {
    mainState: Core.state('Idle', 'Running', 'Stopped')
@@ -176,7 +176,7 @@ var Player = {
 When the object has been inited, its state goes to the first value of the set.
 
 
-####Changing State
+#### Changing State
 ```javascript
   Object.mainState.go('Running');
 ```
