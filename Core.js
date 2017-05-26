@@ -609,7 +609,7 @@ Core = {
         for(var i = 0 ; i < to_check.length; i++) {
             for(var j = 0; j < ns.length; j++) {
                 for(var _ in ns[j]) {
-                    if(ns[j].hasOwnProperty(_) && (ns[j] == global ? _.match(/^[A-Z]/) : true) && ns[j][_] == to_check[i]) {
+                    if(ns[j].hasOwnProperty(_) && _ && (ns[j] == global ? _.match(/^[A-Z]/) : true) && ns[j][_] == to_check[i]) {
                         Core.processObject(to_check[i]);
                     }
                 }
