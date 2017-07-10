@@ -389,6 +389,8 @@ Core = {
 
         global[name] = eventConstructor;
 
+        eventConstructor.__proto__ = Core.EventPoint.prototype;
+
         return global[name];
     }
     , registerRequestPoint: function(name, options) {
@@ -408,6 +410,8 @@ Core = {
         requestConstructor.options   = options;
 
         global[name] = requestConstructor;
+
+        requestConstructor.__proto__ = Core.RequestPoint.prototype;
 
         this.registerEventPoint(name + '_Start'  , {log: false});
         this.registerEventPoint(name + '_Success', {log: !options || options.log});
