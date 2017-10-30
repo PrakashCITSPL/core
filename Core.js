@@ -732,25 +732,25 @@ if(typeof window != 'undefined') {
             old_onresize = window.onresize || document.body.onresize;
         }
 
-        FireEvent(new DOM_Init());
+        Core.FireEvent(new DOM_Init());
 
-        FireEvent(new DOM_Changed({element: document.body}));
+        Core.FireEvent(new DOM_Changed({element: document.body}));
 
         window.onscroll = document.body.onscroll = function(event) {
             if(old_onscroll) {
                 old_onscroll(event);
             }
-            FireEvent(new Window_Scroll({dom_event: event}));
+            Core.FireEvent(new Window_Scroll({dom_event: event}));
         };
         window.onresize = document.body.onresize = function(event) {
             if(old_onresize) {
                 old_onresize(event);
             }
-            FireEvent(new Window_Resize({dom_event: event}));
+            Core.FireEvent(new Window_Resize({dom_event: event}));
         };
 
         window.onbeforeunload = function(event) {
-            FireEvent(new DOM_Unload({dom_event: event}));
+            Core.FireEvent(new DOM_Unload({dom_event: event}));
         };
 
     });
