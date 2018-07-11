@@ -27,6 +27,8 @@ Static approach also offers you an ability to build a map how objects/methods ar
 
 High-level description: https://medium.com/@_os/core-design-pattern-the-way-out-from-overly-complicated-code-b8804449941
 
+How to help the project: https://medium.com/ux-of-programming-languages/lets-build-a-community-around-core-701eb8ebb02c
+
 # Installing
 
 # API
