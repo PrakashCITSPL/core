@@ -1,4 +1,4 @@
-# CORE for JS - code closely to how you think
+# CORE for JS - write code close to how you think
 
 ## Write less, do more
 
