@@ -1,6 +1,8 @@
 # CoreJS
 This is the simple JS implementation of CORE design pattern
 
+CORE means: Contexts, Objects, Requests and Events
+
 This framework provide you ability to easily design and implement well structured, high cohesioned, and low coupled modular systems using Events and Requests. The benefit of that approach is a semantic which is highly close to Business Logic, which allows to write less code doing more, and have less bugs and debugging with it.
 
 The ideas in the base of it are similar to following approaches, and it collects the best benefits of them:
@@ -9,8 +11,6 @@ The ideas in the base of it are similar to following approaches, and it collects
 - actor model
 - system of signals and slots
 - event-oriented programming
-
-CORE means: Contexts, Objects, Requests and Events
 
 Event is a complex object, that means that something has already happend.
 Request is a complex object, that means that something asks to perform its request.
