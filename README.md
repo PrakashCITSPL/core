@@ -11,11 +11,15 @@ The ideas in the base of it are similar to following approaches, and it collects
 - event-oriented programming
 
 Event is a complex object, that means that something has already happend.
+
 Request is a complex object, that means that something asks to perform its request.
 
 Other objects of the system can subscribe to Events and Requests. Subscription is a static process (which is **different** to usual **obj.fire('event')** and **obj.on('event)** dynamic-style subscriptions).
+
 During initialization CORE framework parses the code of methods and subscribes objects on Events and Requests statically.
+
 Note that 99% of real-world cases don't need a dynamic behaviour, which is a good base to simplify this process
+
 Static approach also offers you an ability to build a map how objects/methods are connected, and analyse it, which can extend your Static Code Analysis Tool benefits of your project.
 
 # Installing
@@ -25,6 +29,7 @@ Static approach also offers you an ability to build a map how objects/methods ar
 ## Events
 ### Description
 There are three steps for using Events: initialization, firing, catching.
+
 You can pass some data with Event.
 
 ### Example
@@ -50,6 +55,7 @@ To fire Event call `FireEvent` function with created Event.
 
 #### Catching
 The main twist is that you can catch the fired Event at any spaces of your code.
+
 So this can cut your code several times.
 
 Also you can dinamically subscribe to the event. It is useful in different cases, for example, in angular directives.
