@@ -1,4 +1,7 @@
-# CORE for JS - to code closely to how you think. Write less, do more. 
+# CORE for JS - code closely to how you think
+
+## Write less, do more
+
 This framework is the simple JS implementation of **CORE design pattern** (acronym: Contexts, Objects, Requests and Events)
 
 This design pattern and the framework provide you ability to easily design and implement well structured, high cohesioned, and low coupled modular systems using Events and Requests. The benefit of that approach is a semantic which is highly close to Business Logic, which allows to write less code doing more, and have less bugs and debugging with it.
