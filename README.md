@@ -25,6 +25,8 @@ Note that 99% of real-world cases don't need a dynamic behaviour, which is a goo
 
 Static approach also offers you an ability to build a map how objects/methods are connected, and analyse it, which can extend your Static Code Analysis Tool benefits of your project.
 
+High-level description: https://medium.com/@_os/core-design-pattern-the-way-out-from-overly-complicated-code-b8804449941
+
 # Installing
 
 # API
