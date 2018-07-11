@@ -1,5 +1,5 @@
 # CoreJS
-This is the simple JS implementation of *CORE design pattern* (acronym: Contexts, Objects, Requests and Events)
+This is the simple JS implementation of **CORE design pattern** (acronym: Contexts, Objects, Requests and Events)
 
 This framework provide you ability to easily design and implement well structured, high cohesioned, and low coupled modular systems using Events and Requests. The benefit of that approach is a semantic which is highly close to Business Logic, which allows to write less code doing more, and have less bugs and debugging with it.
 
@@ -13,7 +13,7 @@ The ideas in the base of it are similar to following approaches, and it collects
 Event is a complex object, that means that something has already happend.
 Request is a complex object, that means that something asks to perform its request.
 
-Other objects of the system can subscribe to Events and Requests. Subscription is a static process (which is *difference* to usual *obj.fire('event')* and *obj.on('event)* dynamic-style subscriptions).
+Other objects of the system can subscribe to Events and Requests. Subscription is a static process (which is *difference* to usual **obj.fire('event')** and **obj.on('event)** dynamic-style subscriptions).
 During initialization Core parses code of methods and subscribes objects on Events and Requests statically.
 
 # Installing
