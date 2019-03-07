@@ -1,3 +1,5 @@
+declare module "core-os";
+
 interface Core {
   FireEvent  (Request: CoreRequest, success?: Function, fail?: Function) :void;
   FireRequest(Event  : CoreEvent) :void;
